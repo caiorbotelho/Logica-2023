@@ -5,12 +5,14 @@
 
 programa
 {
-	real salario[5]
+	
+	inclua biblioteca Matematica --> mat
+	real salario[5]
 	
 	funcao inicio()
 	{
 		para(inteiro i=0; i < 5; i++){
-			escreva("Digite o salario: ", i+1, "\n")
+			escreva("Digite o salario ", i+1, ":\n")
 			leia(salario[i])
 
 
@@ -22,9 +24,10 @@ programa
 			
 		
 	}
-			para(inteiro i=0; i < 10; i++){
+			para(inteiro i=0; i < 5; i++){
 
-			escreva("Os salarios sao: ")
+			escreva("Os salarios sao: ", salario[i], "\n")
+			escreva(mat.arredondar(salario[i],2))
 
 		}
 	
@@ -37,7 +40,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 455; 
+ * @POSICAO-CURSOR = 616; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
